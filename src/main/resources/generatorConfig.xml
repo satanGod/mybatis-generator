@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry
+            location="D:\maven-repository\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar" />
+    <context id="context">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <commentGenerator>
+            <property name="suppressDate" value="true" />
+            <property name="addRemarkComments" value="true" />
+        </commentGenerator>
+        <jdbcConnection
+                connectionURL="jdbc:mysql://192.168.15.49:3306/boco_chronic_disease"
+                driverClass="com.mysql.jdbc.Driver" password="boco1234#BH#DBA"
+                userId="root" />
+        <javaModelGenerator targetPackage="com.boco.chronic.model"
+                            targetProject="boco-chronic-disease-ms/src/main/java" />
+        <table tableName="health_education_activity" enableCountByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false">
+        </table>
+
+    </context>
+</generatorConfiguration>
